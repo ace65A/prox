@@ -14,7 +14,7 @@ async function fetchOpenAIResponse(message) {
             max_tokens: 100
         }, {
             headers: {
-                'Authorization': `Bearer ${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}`
+                'Authorization': `Bearer ${OPENAI_API_KEY}`
             }
         });
         return response.data.choices[0].text.trim();
